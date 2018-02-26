@@ -52,6 +52,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\CreateCone.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Scripts\Editor\CurvedUIInputModuleEditor.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Scripts\Editor\CurvedUIScriptOrder.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Scripts\Editor\CurvedUISettingsEditor.cs" />
      <Compile Include="Assets\Extern\FORGE3D\Space Ship\Shield\HelpMenu\Editor\F3DHelpMenu.cs" />
      <Compile Include="Assets\Extern\SteamVR\Editor\SteamVR_Editor.cs" />
      <Compile Include="Assets\Extern\SteamVR\Editor\SteamVR_Preferences.cs" />

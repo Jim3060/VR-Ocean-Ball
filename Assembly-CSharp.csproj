@@ -51,6 +51,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_AnimateCurvedFillOnStart.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_CameraController.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_CameraRotationOnButtonHeld.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_ChangeValueOnHold.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_ControllerHandSwitcher.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_DragBetweenCanvases.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_draggable.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_GunController.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_GunMovement.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_inventory_paralax.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_MoveAlong.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_MoveHeartbeat.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_OrientOnCurvedSpace.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_PerlinNoisePosition.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_PerlinNoiseRotation.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_PickImageFromSet.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_RaycastToCanvas.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_RiseChildrenOverTime.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_rotation_anim.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_ShowParentCoordinates.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_TMPChecker.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_touchpad.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_ViveButtonState.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_ViveHapticPulse.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_ViveLaserBeam.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_WorldSpaceCursorFollow.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_WorldSpaceMouseMultipleCanvases.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\CUI_ZChangeOnHover.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Scripts\CurvedUIEventSystem.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Scripts\CurvedUIInputFieldCaret.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Scripts\CurvedUIInputModule.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Scripts\CurvedUIPointerEventData.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Scripts\CurvedUIRaycaster.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Scripts\CurvedUISettings.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Scripts\CurvedUIVertexEffect.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Scripts\CurvedUIViveController.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Scripts\Experimental\CurvedUITMP.cs" />
+     <Compile Include="Assets\Extern\CurvedUI\Scripts\Experimental\CurvedUITMPSubmesh.cs" />
      <Compile Include="Assets\Extern\ForceFieldFx2\ForceField\Script\RenderDepth.cs" />
      <Compile Include="Assets\Extern\FORGE3D\Force Field\Examples\Scripts\CameraGun.cs" />
      <Compile Include="Assets\Extern\FORGE3D\Force Field\Examples\Scripts\CameraGun_Mobile.cs" />
@@ -175,12 +213,16 @@
      <Compile Include="Assets\Extern\SteamVR\Scripts\SteamVR_Utils.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\ClockController.cs" />
+     <Compile Include="Assets\Scripts\DoorController.cs" />
+     <Compile Include="Assets\Scripts\DownBtn.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\ReminderFrameController.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\SlidingDoorController.cs" />
+     <Compile Include="Assets\Scripts\UpBtn.cs" />
      <Compile Include="Assets\Scripts\VR\CameraFellow.cs" />
      <Compile Include="Assets\Scripts\VR\ControllerManager.cs" />
+     <None Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\OverlayBlend.shader" />
      <None Include="Assets\Shaders\GlassShader.shader" />
      <None Include="Assets\Extern\FORGE3D\Force Field\Shaders\ForceField.shader" />
      <None Include="Assets\Extern\ForceFieldFx2\ForceField\Shader\ForceField.shader" />
@@ -194,6 +236,7 @@
      <None Include="Assets\Shaders\ShaderLearning4.2.shader" />
      <None Include="Assets\Extern\FORGE3D\Force Field\Shaders\ForceField_Static_Mobile.shader" />
      <None Include="Assets\Extern\FORGE3D\Force Field\Shaders\ForceField_Static_uv1.shader" />
+     <None Include="Assets\Extern\CurvedUI\Shaders and Materials\UIAlwaysOnTop.shader" />
      <None Include="Assets\Extern\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/coding/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
