@@ -8,11 +8,13 @@ public class BallLifeManager : MonoBehaviour {
     public int status; // Status of ball's life:  0--dead;  1--live;  2--pause;
 
     private Vector3 lastCkptPos;
+    private Rigidbody rb;
 
 	// Use this for initialization
 	void Start () {
         lastCkptPos = ball.transform.position;
-	}
+        rb = ball.GetComponent<Rigidbody>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -54,5 +56,6 @@ public class BallLifeManager : MonoBehaviour {
         Vector3 tmp = lastCkptPos;
         tmp.y += 10;
         ball.transform.position = tmp;
+        rb.velocity = Vector3.zero;
     }
 }

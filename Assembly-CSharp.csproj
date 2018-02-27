@@ -211,6 +211,7 @@
      <Compile Include="Assets\Extern\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
      <Compile Include="Assets\Extern\SteamVR\Scripts\SteamVR_UpdatePoses.cs" />
      <Compile Include="Assets\Extern\SteamVR\Scripts\SteamVR_Utils.cs" />
+     <Compile Include="Assets\Scripts\AccelerateDetector.cs" />
      <Compile Include="Assets\Scripts\BallLifeManager.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Checkpoint.cs" />
@@ -222,6 +223,7 @@
      <Compile Include="Assets\Scripts\ReminderFrameController.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\SlidingDoorController.cs" />
+     <Compile Include="Assets\Scripts\SwitchDetector.cs" />
      <Compile Include="Assets\Scripts\UpBtn.cs" />
      <Compile Include="Assets\Scripts\VR\CameraFellow.cs" />
      <Compile Include="Assets\Scripts\VR\ControllerManager.cs" />
@@ -229,6 +231,7 @@
      <None Include="Assets\Shaders\GlassShader.shader" />
      <None Include="Assets\Extern\FORGE3D\Force Field\Shaders\ForceField.shader" />
      <None Include="Assets\Extern\ForceFieldFx2\ForceField\Shader\ForceField.shader" />
+     <None Include="Assets\Textures\nec_hell\nec_hell\nec_hell\readme.txt" />
      <None Include="Assets\Extern\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
      <None Include="Assets\Shaders\ShaderLearning4.3.shader" />
      <None Include="Assets\Extern\FORGE3D\Force Field\Shaders\ForceField_Static_VertexAnim.shader" />
@@ -237,6 +240,7 @@
      <None Include="Assets\Extern\FORGE3D\Force Field\Shaders\ForceField_Mobile.shader" />
      <None Include="Assets\Shaders\GlassShader2.shader" />
      <None Include="Assets\Shaders\ShaderLearning4.2.shader" />
+     <None Include="Assets\Textures\nec_hell\nec_hell\nec_hell\nec_hell.shader" />
      <None Include="Assets\Extern\FORGE3D\Force Field\Shaders\ForceField_Static_Mobile.shader" />
      <None Include="Assets\Extern\FORGE3D\Force Field\Shaders\ForceField_Static_uv1.shader" />
      <None Include="Assets\Extern\CurvedUI\Shaders and Materials\UIAlwaysOnTop.shader" />
