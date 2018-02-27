@@ -211,11 +211,14 @@
      <Compile Include="Assets\Extern\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
      <Compile Include="Assets\Extern\SteamVR\Scripts\SteamVR_UpdatePoses.cs" />
      <Compile Include="Assets\Extern\SteamVR\Scripts\SteamVR_Utils.cs" />
+     <Compile Include="Assets\Scripts\BallLifeManager.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Checkpoint.cs" />
      <Compile Include="Assets\Scripts\ClockController.cs" />
      <Compile Include="Assets\Scripts\DoorController.cs" />
      <Compile Include="Assets\Scripts\DownBtn.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PuzzleTrigger.cs" />
      <Compile Include="Assets\Scripts\ReminderFrameController.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\SlidingDoorController.cs" />
