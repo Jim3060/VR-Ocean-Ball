@@ -47,29 +47,14 @@ public class ControllerManager : MonoBehaviour
 
     private bool Viberated = false;
 
-    IEnumerator ViberateBothDevice()
-    {
-        for (float timer = 0; timer <= 0.5; timer += Time.deltaTime)
-        {
-            leftDevice.TriggerHapticPulse(500);
-            rightDevice.TriggerHapticPulse(500);
-            yield return 0;
-        }
-    }
-    public void VibrateBoth()
-    {
-        StopCoroutine("ViberateBothDevice");
-        StartCoroutine("ViberateBothDevice");
-
-
-    }
+    
     /*
     device: HTC Vive device, such as leftController/rightController
     buttomMask: the button mask, you can see [SteamVR_Controller.ButtonMask] for help
     */
     private bool GetTouchDown(SteamVR_Controller.Device device, ulong buttomMask)
     {
-        return device.GetTouchDown(buttomMask);
+        return device.GetPress(buttomMask);
     }
 
     // the function used to get "Axis" information of buttoms
@@ -95,8 +80,46 @@ public class ControllerManager : MonoBehaviour
         {
             rightObject = right.GetComponent<SteamVR_TrackedObject>();
         }
+		// left
+		if (leftObject != null)
+		{
+			leftControllerActive = (leftObject.index != SteamVR_TrackedObject.EIndex.None);
+			leftDevice = leftControllerActive ? SteamVR_Controller.Input((int)leftObject.index) : null;
+		}
+		else
+		{
+			leftControllerActive = false;
+			leftDevice = null;
+		}
+		// right
+		if (rightObject != null)
+		{
+			rightControllerActive = (rightObject.index != SteamVR_TrackedObject.EIndex.None);
+			rightDevice = rightControllerActive ? SteamVR_Controller.Input((int)rightObject.index) : null;
+		}
+		else
+		{
+			rightControllerActive = false;
+			rightDevice = null;
+		}
     }
+	IEnumerator ViberateBothDevice()
+	{
+		for (float timer = 0; timer <= 0.1; timer += Time.deltaTime)
+		{
+			//Debug.Log(SteamVR_Controller.Input((int)leftObject.index).transform);
+			leftDevice.TriggerHapticPulse(200);
+			rightDevice.TriggerHapticPulse(200);
+			yield return 0;
+		}
+	}
+	public void VibrateBoth()
+	{
+		StopCoroutine("ViberateBothDevice");
+		StartCoroutine("ViberateBothDevice");
 
+
+	}
     // Update is called once per frame
     void Update()
     {
@@ -144,11 +167,12 @@ public class ControllerManager : MonoBehaviour
         // left
         if (leftDevice != null)
         {
+			Debug.Log ("test");
             leftControllerTouchDown.applicationMenu = GetTouchDown(leftDevice, SteamVR_Controller.ButtonMask.ApplicationMenu);
             leftControllerTouchDown.touchpad = GetTouchDown(leftDevice, SteamVR_Controller.ButtonMask.Touchpad);
             leftControllerTouchDown.system = GetTouchDown(leftDevice, SteamVR_Controller.ButtonMask.System);
             leftControllerTouchDown.trigger = GetTouchDown(leftDevice, SteamVR_Controller.ButtonMask.Trigger);
-            leftControllerTouchDown.grip = GetTouchDown(leftDevice, SteamVR_Controller.ButtonMask.Grip);
+			leftControllerTouchDown.grip = leftDevice.GetPress (SteamVR_Controller.ButtonMask.Grip);//GetTouchDown(leftDevice, SteamVR_Controller.ButtonMask.Grip);
             leftTouchpadAxis = GetAxis(leftDevice, Valve.VR.EVRButtonId.k_EButton_Axis0);
             leftTriggerAxis = GetAxis(leftDevice, Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
         }

@@ -22,7 +22,7 @@ public class SwitchDetector : MonoBehaviour {
 	void Update () {
         if (isTriggered && inTheZone) {
             Vector3 tmpV = rb.velocity;
-            tmpV.x -= 6;
+            tmpV.x -= 2;
             rb.velocity = tmpV;
         }
 	}

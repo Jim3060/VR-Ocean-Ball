@@ -14,6 +14,8 @@ public class ClockController : MonoBehaviour {
 
     public Rigidbody playerBody;
     public Light dlight;
+	public GameObject powerController;
+	public GameObject elevatorBack;
 
     // Use this for initialization
     void Start () {
@@ -32,6 +34,11 @@ public class ClockController : MonoBehaviour {
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P)) { hourRotation(true); }
+		if (hour == 21) {
+			powerUp ();
+		} else {
+			powerDown ();
+		}
     }
 
     private void updateReminder() {
@@ -119,4 +126,16 @@ public class ClockController : MonoBehaviour {
     public int getHour() {
         return hour;
     }
+
+	private void  powerUp(){
+		powerController.SendMessage ("powerUp");
+		elevatorBack.SetActive (false);
+	}
+
+	private void powerDown(){
+		powerController.SendMessage ("powerDown");
+		elevatorBack.SetActive (true);
+	}
+
+
 }

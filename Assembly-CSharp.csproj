@@ -219,23 +219,29 @@
      <Compile Include="Assets\Scripts\DoorController.cs" />
      <Compile Include="Assets\Scripts\DownBtn.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PowerController.cs" />
      <Compile Include="Assets\Scripts\PuzzleTrigger.cs" />
      <Compile Include="Assets\Scripts\ReminderFrameController.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\SlidingDoorController.cs" />
      <Compile Include="Assets\Scripts\SwitchDetector.cs" />
+     <Compile Include="Assets\Scripts\TutorialController.cs" />
      <Compile Include="Assets\Scripts\UpBtn.cs" />
      <Compile Include="Assets\Scripts\VR\CameraFellow.cs" />
      <Compile Include="Assets\Scripts\VR\ControllerManager.cs" />
+     <Compile Include="Assets\winScript.cs" />
+     <None Include="Assets\Extern\SteamVR\Resources\SteamVR_Fade.shader" />
      <None Include="Assets\Extern\CurvedUI\Demo Scenes\Demo Scenes Content\OverlayBlend.shader" />
      <None Include="Assets\Shaders\GlassShader.shader" />
      <None Include="Assets\Extern\FORGE3D\Force Field\Shaders\ForceField.shader" />
      <None Include="Assets\Extern\ForceFieldFx2\ForceField\Shader\ForceField.shader" />
+     <None Include="Assets\Extern\SteamVR\Resources\SteamVR_ClearAll.shader" />
      <None Include="Assets\Textures\nec_hell\nec_hell\nec_hell\readme.txt" />
      <None Include="Assets\Extern\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
      <None Include="Assets\Shaders\ShaderLearning4.3.shader" />
      <None Include="Assets\Extern\FORGE3D\Force Field\Shaders\ForceField_Static_VertexAnim.shader" />
      <None Include="Assets\Extern\FORGE3D\Force Field\Shaders\ForceField_Static.shader" />
+     <None Include="Assets\Extern\SteamVR\InteractionSystem\Teleport\Shaders\Highlight.shader" />
      <None Include="Assets\Extern\FORGE3D\Weapon Range\Shaders\F3DLightEmissive.shader" />
      <None Include="Assets\Extern\FORGE3D\Force Field\Shaders\ForceField_Mobile.shader" />
      <None Include="Assets\Shaders\GlassShader2.shader" />
@@ -244,7 +250,13 @@
      <None Include="Assets\Extern\FORGE3D\Force Field\Shaders\ForceField_Static_Mobile.shader" />
      <None Include="Assets\Extern\FORGE3D\Force Field\Shaders\ForceField_Static_uv1.shader" />
      <None Include="Assets\Extern\CurvedUI\Shaders and Materials\UIAlwaysOnTop.shader" />
+     <None Include="Assets\Extern\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
+     <None Include="Assets\Extern\SteamVR\Resources\SteamVR_AlphaOut.shader" />
+     <None Include="Assets\Extern\SteamVR\readme.txt" />
+     <None Include="Assets\Extern\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
+     <None Include="Assets\Extern\SteamVR\Resources\SteamVR_ColorOut.shader" />
      <None Include="Assets\Extern\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
+     <None Include="Assets\Extern\SteamVR\InteractionSystem\Readme_InteractionSystem.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/coding/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
